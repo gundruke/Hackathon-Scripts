@@ -1,0 +1,4 @@
+latitude,longitude,name,address,remBeds,totalBeds,type,access token
+40.6349828182802,-8.65538764006487,"Centro Hospitalar Baixo Vouga, Aveiro","Avenida Artur Ravara 35, 3810-164 Aveiro",10,100,Hospital,hospital1
+40.6320046917993,-8.6467756033926,Centro de Saúde de Aveiro,"Viela da Fonte dos Amores 57A, 3810-164 Aveiro",50,100,Hospital,hospital2
+40.6377304078999,-8.63620930888828,Hospital da Luz Aveiro,"Rua do Brasil 21, 3800-009 Aveiro",75,90,Hospital,hospital3

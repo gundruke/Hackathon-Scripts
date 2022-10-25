@@ -1,0 +1,9 @@
+version: "3"
+services:
+ mqtt:
+      image: toke/mosquitto
+      network_mode: bridge
+      container_name: mqtt
+      ports:
+        - 1993:1883
+      restart: unless-stopped

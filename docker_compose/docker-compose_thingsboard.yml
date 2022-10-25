@@ -1,0 +1,25 @@
+version: '2.2'
+services:
+  info-river:
+    restart: always
+    image: "thingsboard/tb-postgres"
+    ports:
+      - "8080:9090"
+      - "8081:1883"
+      - "7070:7070"
+      - "8083-8088:5683-5688/udp"
+    environment:
+      TB_QUEUE_TYPE: in-memory
+    volumes:
+      - .mytb-data:/data
+      - .mytb-logs:/var/log/thingsboard
+    networks:
+      - all
+
+# na parte final do ficheiro inserir
+networks:
+  all:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.1.0.0/16
